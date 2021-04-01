@@ -66,6 +66,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    border: 1px solid black; /* DA TOGLIERE */
 }
 
 /* Esercizio 1 */
@@ -223,5 +224,38 @@
     }
     to {
         right: 20%;
+    }
+}
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: move-top-13;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes move-top-13 {
+    from {
+        left: 10%;
+    }
+    25%{
+        left: calc(10% + 150px);
+        top: -10px;        
+    }
+    50% {
+        left: 90%;        
+        top: calc(-10px + 70px);
+    }
+    75% {
+        left: -10%;        
+        top: 50px;
+    }
+    85% {
+        left: 0;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
     }
 }
