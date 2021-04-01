@@ -155,19 +155,37 @@
 /* Esercizio 10 */
 .ex-10-icon {
     animation: move;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: reverse;
 }
 
 @keyframes move {
     from {
-        border-radius: 0;
-    }
-    50% {
-        border-radius: 25%;
+        transform: rotate(0deg);
     }
     to {
-        border-radius: 50%;
+        transform: rotate(360deg);
     }
 }
+
+/* Esercizio 11 */
+.ex-11-icon:hover {
+    animation: move-2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes move-2 {
+    from {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(270deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
