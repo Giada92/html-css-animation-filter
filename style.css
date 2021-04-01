@@ -2,7 +2,6 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
-    transition: all 2s;
 }
 .ex-2-square {
     width: 100px;
@@ -68,7 +67,72 @@
     width: 60px;
     height: 20px;
 }
+
 /* Esercizio 1 */
+.ex-1-square {
+    transition: all 2s;
+}
+
 .ex-1-square:hover {
     background-color: red;
 }
+
+/* Esercizio 2 */
+.ex-2-square {
+    transition: width 0.5s ease-in-out;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+/* Esercizio 3 */
+.ex-3-square:hover {
+    animation: change-border;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes change-border {
+    from {
+        border-radius: 0;
+    }
+    50% {
+        border-radius: 25%;
+    }
+    to {
+        border-radius: 50%;
+    }
+}
+
+/* DA FINIRE ESERCIZIO 3  */
+
+/* Esercizio 4 */
+.ex-4-square {
+    transition: opacity 1s ease-in-out;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+/* Esercizio 5 */
+.ex-5-square {
+    transition: all 1s ease-in-out;
+}
+
+.ex-5-square:hover {
+    transform: scale(2);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+/* Esercizio 6 */
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/* Esercizio 7 */
