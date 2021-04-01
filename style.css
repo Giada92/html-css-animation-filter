@@ -189,3 +189,39 @@
     }
 }
 
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-top-12;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes move-top-12 {
+    from {
+        left: 10%;
+    }
+    50% {
+        left: calc(10% + 100px);
+    }
+    to {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move-bottom-12;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes move-bottom-12 {
+    from {
+        right: 20%;
+    }
+    50% {
+        right: calc(20% + 80px);
+    }
+    to {
+        right: 20%;
+    }
+}
